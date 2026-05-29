@@ -72,19 +72,4 @@ router.post('/add', async (req, res) => {
   }
 });
 
-router.delete('/users', async (req, res) => {
-  try {
-    await User.deleteMany({});
-
-    res.json({
-      message: 'All users deleted'
-    });
-  } catch (error) {
-    res.status(500).json({
-      id: 'DELETE_USERS_ERROR',
-      message: error.message
-    });
-  }
-});
-
 module.exports = router;
