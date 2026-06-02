@@ -6,6 +6,8 @@ router.get('/about', (req, res) => {
     {
       first_name: 'Dan',
       last_name: 'Kuenkas'
+       first_name: 'Nadav',
+       last_name: 'Golche Faragian'
     }
   ]);
 });
